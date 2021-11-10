@@ -3,6 +3,31 @@ body {
   font-family: Verdana, Geneva, sans-serif;
   font-size: 21px;
   font-weight: 300;
+  background-color: #18343e;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+.container {
+  width: 700px;
+  margin: 0 auto;
+}
+.aboutme {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 40px;
+}
+
+.aboutme img {
+  border-radius: 25%;
+  width: 400px;
+  text-align: center;
+  box-shadow: purple;
+  border: #5ac3e8 10px solid;
+}
+header,
+section {
+  padding: 100px 0;
 }
 
 .majorProjects {
@@ -17,9 +42,16 @@ body {
   display: inline-block;
   color: #252525;
   text-decoration: none;
-  background: #99d930;
+  background: #c65ae8;
   padding: 10px 25px;
   margin-top: 25px;
+  text-align: center;
+}
+
+.button:hover,
+.button:focus {
+  background: #252525;
+  color: #fff;
   text-align: center;
 }
 
@@ -27,7 +59,7 @@ body {
   display: inline-block;
   color: #252525;
   text-decoration: none;
-  background: #99d930;
+  background: #c65ae8;
   padding: 11px 26px;
   margin-top: 25px;
   text-align: center;
@@ -39,67 +71,16 @@ body {
   color: #fff;
   text-align: center;
 }
-#toggle {
-  position: absolute;
-  appearance: none;
-  cursor: pointer;
-  left: -100%;
-  top: -100%;
-}
 
-#toggle + label {
-  position: absolute;
-  cursor: pointer;
-  padding: 10px;
-  background: #000;
-  width: 100px;
-  border-radius: 3px;
-  padding: 8px 10px;
-  color: #fff;
-  line-height: 20px;
-  font-size: 12px;
+img {
+  border-radius: 10%;
+  width: 195px;
   text-align: center;
-  -webkit-font-smoothing: antialiased;
-  cursor: pointer;
-  margin: 20px 50px;
-  transition: all 500ms ease;
+  box-shadow: purple;
+  border: #252525 2px solid;
 }
 
-#toggle + label:after {
-  content: "Slide Down";
-}
-
-.slidecontainer {
-  transition: margin 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
-  padding: 5em 3em;
-}
-#toggle:checked ~ .message {
-  top: 0;
-}
-#toggle:checked ~ .slidecontainer {
-  margin-top: 250px;
-}
-#toggle:checked + label {
-  background: #54494b;
-}
-
-#toggle:checked + label:after {
-  content: "Slide Up";
-}
-
-.message {
-  background: #54494b none repeat scroll 0 0;
-  box-sizing: border-box;
-  color: #fff;
-  height: 230px;
-  left: 0;
-  overflow: hidden;
-  padding: 2em;
-  position: absolute;
-  top: -250px;
-  transition: top 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94) 0s;
-  width: 100%;
-}
-.message h1 {
-  color: #fff;
+.inverse {
+  background-color: #5ac3e8;
+  color: black;
 }
