@@ -1,20 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
 body {
   text-align: center;
   font-family: Verdana, Geneva, sans-serif;
   font-size: 21px;
   font-weight: 300;
-  background-color: #18343e;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-  color: white;
+
+  line-height: 1.6;
 }
 .container {
-  width: 700px;
+  max-width: 60vw;
   margin: 0 auto;
 }
+
 .aboutme {
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+  padding-top: 20px;
   padding-bottom: 40px;
 }
 
@@ -25,9 +33,13 @@ body {
   box-shadow: purple;
   border: #5ac3e8 10px solid;
 }
-header,
+header {
+  margin-top: 0;
+  padding-top: 0;
+}
+
 section {
-  padding: 100px 0;
+  padding: 75px 0;
 }
 
 .majorProjects {
@@ -80,7 +92,29 @@ img {
   border: #252525 2px solid;
 }
 
-.inverse {
-  background-color: #5ac3e8;
-  color: black;
+.projectsHeader {
+  padding-top: 0;
+  margin-top: 0%;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 2px solid;
+  margin-bottom: 2em;
+}
+
+.name {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  border-bottom: 2px solid;
+  margin-bottom: 1em;
+}
+
+.dark {
+  /* background-image: url("img/darkBlue.png"); */
+  background-color: rgba(24, 52, 62, 1);
+  color: rgba(255, 255, 255, 0.85);
+}
+.light {
+  /* background-image: url("img/lightBlue.png"); */
+  background-color: rgba(90, 195, 232, 1);
+  color: rgba(0, 0, 0, 0.85);
 }
