@@ -155,6 +155,17 @@ img {
   animation-direction: alternate;
 }
 
+.sweetNav {
+  /* background-color: rgba(90, 195, 232, 1); */
+  color: rgba(0, 0, 0, 0.85);
+  -webkit-animation: bgcolor2 20s infinite;
+  animation: bgcolor2 10s infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  position: fixed;
+  width: 100%;
+}
+
 @media (min-width: 1800px) {
   body {
     display: flex;
