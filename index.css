@@ -153,6 +153,7 @@ img {
   animation: bgcolor2 10s infinite;
   -webkit-animation-direction: alternate;
   animation-direction: alternate;
+  text-shadow: 1px 1px 1px #e60edf;
 }
 
 .sweetNav {
@@ -164,6 +165,7 @@ img {
   animation-direction: alternate;
   position: fixed;
   width: 100%;
+  /* box-shadow: 2px 2.98256px 7.4564px, white; */
 }
 
 @media (min-width: 1800px) {
