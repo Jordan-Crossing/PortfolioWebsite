@@ -12,7 +12,7 @@ body {
   font-weight: 300;
   margin: 0 auto;
   padding: 0;
-
+  text-shadow: 1px 1px 2px #474747;
   line-height: 1.6;
 }
 .container {
@@ -153,6 +153,19 @@ img {
   animation: bgcolor2 10s infinite;
   -webkit-animation-direction: alternate;
   animation-direction: alternate;
+  text-shadow: 1px 1px 1px #e60edf;
+}
+
+.sweetNav {
+  /* background-color: rgba(90, 195, 232, 1); */
+  color: rgba(0, 0, 0, 0.85);
+  -webkit-animation: bgcolor2 20s infinite;
+  animation: bgcolor2 10s infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  position: fixed;
+  width: 100%;
+  /* box-shadow: 2px 2.98256px 7.4564px, white; */
 }
 
 @media (min-width: 1800px) {
