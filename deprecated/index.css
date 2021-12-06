@@ -13,7 +13,10 @@ body {
   margin: 0 auto;
   padding: 0;
   text-shadow: 1px 1px 2px #474747;
-  line-height: 1.6;
+  line-height: 1.8;
+  word-spacing: 0.3em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .container {
   max-width: 60vw;
@@ -135,25 +138,25 @@ img {
 }
 
 .dark {
-  background-image: url("img/darkBlue.png");
-  background-blend-mode: darken;
-  /* background-color: rgba(24, 52, 62, 1); */
+  /* background-image: url("img/darkBlue.png");
+  background-blend-mode: darken; */
+  background-color: rgba(24, 52, 62, 1);
   -webkit-animation: bgcolor 20s infinite;
   animation: bgcolor 10s infinite;
   -webkit-animation-direction: alternate;
   animation-direction: alternate;
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(255, 255, 255, 1);
 }
 .light {
-  background-image: url("img/darkBlue.png");
-  background-blend-mode: difference;
+  /* background-image: url("img/darkBlue.png");
+  background-blend-mode: screen; */
   /* background-color: rgba(90, 195, 232, 1); */
-  color: rgba(0, 0, 0, 0.85);
+  color: rgba(0, 0, 0, 1);
   -webkit-animation: bgcolor 20s infinite;
   animation: bgcolor2 10s infinite;
   -webkit-animation-direction: alternate;
   animation-direction: alternate;
-  text-shadow: 1px 1px 1px #e60edf;
+  text-shadow: 1px 1px 1px grey;
 }
 
 .sweetNav {
