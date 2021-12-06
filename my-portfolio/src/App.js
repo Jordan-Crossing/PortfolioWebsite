@@ -1,11 +1,9 @@
 import "./App.css";
+import "./components/greeting";
+import greeting from "./components/greeting";
 
 function App() {
-  return (
-    <>
-      <h1>hello !</h1>
-    </>
-  );
+  return <>{greeting("how's it going ?")}</>;
 }
 
 export default App;
