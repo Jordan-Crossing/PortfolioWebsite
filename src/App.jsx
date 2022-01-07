@@ -4,10 +4,11 @@ import Showcase from "./components/showcase/Showcase.jsx";
 import Testimonials from "./components/testimonials/Testimonials.jsx";
 import Topbar from "./components/topbar/Topbar.jsx";
 import Works from "./components/works/Works.jsx";
+import "./app.scss";
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Topbar />
       <div className="sections">
         <Intro />
