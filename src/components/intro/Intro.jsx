@@ -3,7 +3,11 @@ import "./intro.scss";
 export default function Intro() {
   return (
     <div className="intro" id="intro">
-      Intro
+      <img
+        src={require("./layered-waves-haikei.svg").default}
+        alt="svg decoration"
+        className="svgWave"
+      />
     </div>
   );
 }

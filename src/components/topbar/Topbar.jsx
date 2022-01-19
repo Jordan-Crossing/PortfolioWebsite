@@ -10,13 +10,14 @@ export default function Topbar() {
           <a href="#intro" className="logo">
             Jordan.
           </a>
-          <div className="itemContainer"></div>
-          <GitHubIcon className="icon" />
-          <span>https://github.com/Jordan-Crossing</span>
-          <EmailIcon className="icon" />
-          <span>Jordan@email.com</span>
+          <div className="itemContainer">
+            <GitHubIcon className="icon" />
+            <span>https://github.com/Jordan-Crossing</span>
+            <EmailIcon className="icon" />
+            <span>Jordan@email.com</span>
+          </div>
         </div>
-        <div className="right">this is right</div>
+        <div className="right">right</div>
       </div>
     </div>
   );
