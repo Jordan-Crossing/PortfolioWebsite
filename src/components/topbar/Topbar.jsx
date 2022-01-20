@@ -12,9 +12,10 @@ export default function Topbar() {
           </a>
           <div className="itemContainer">
             <GitHubIcon className="icon" />
-            <span>https://github.com/Jordan-Crossing</span>
+            <a href="https://github.com/Jordan-Crossing">Check out my code.</a>
+
             <EmailIcon className="icon" />
-            <span>Jordan@email.com</span>
+            <a href="#contact"> Get in contact.</a>
           </div>
         </div>
         <div className="right">right</div>
