@@ -8,17 +8,24 @@ export default function Topbar() {
       <div className="wrapper">
         <div className="left">
           <a href="#intro" className="logo">
-            Jordan.
+            <span>J</span>
+            <p>ordan</p>
+            <span>.</span>
           </a>
-          <div className="itemContainer">
-            <GitHubIcon className="icon" />
-            <a href="https://github.com/Jordan-Crossing">Check out my code.</a>
-
-            <EmailIcon className="icon" />
-            <a href="#contact"> Get in contact.</a>
+          <div className="linksContainer">
+            <a href="https://github.com/Jordan-Crossing">
+              <GitHubIcon className="icon" />
+              <p>Check out my&nbsp;</p>
+              <span>GitHub.</span>
+            </a>
+            <a href="#contact">
+              <EmailIcon className="icon" />
+              <p>Get in&nbsp;</p>
+              <span>Contact.</span>
+            </a>
           </div>
         </div>
-        <div className="right">right</div>
+        <div className="right">R</div>
       </div>
     </div>
   );
