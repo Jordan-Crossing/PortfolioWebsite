@@ -10,6 +10,7 @@
   z-index: 3;
   display: flex;
   justify-content: center;
+  transition: all 1s ease;
 
   .wrapper {
     width: 100%;
@@ -26,7 +27,7 @@
       //justify-content: space-between;
 
       .logo {
-        font-size: clamp(2vw, 5vh, 4rem);
+        font-size: clamp(2vw, 4.5vh, 4.5vh);
         // font-size: clamp(3rem, 5vw, 4rem);
         font-weight: 700;
         margin: 0 auto;
@@ -87,6 +88,44 @@
       }
     }
     .right {
+      .hamburger {
+        overflow: hidden;
+        width: 5vh;
+
+        height: 3vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        span {
+          width: 100%;
+          height: 0.35vh;
+          min-height: 5px;
+          background-color: $mainColor;
+          transform-origin: left;
+          transition: all 2s ease;
+        }
+      }
+    }
+  }
+  &.active {
+    background-color: $mainColor;
+    color: white;
+
+    .hamburger {
+      span {
+        &:first-child {
+          background-color: white;
+          transform: rotate(45deg);
+        }
+        &:last-child {
+          background-color: white;
+          transform: rotate(-45deg);
+        }
+        &:nth-child(2) {
+          opacity: 0;
+        }
+      }
     }
   }
 }
@@ -109,9 +148,20 @@
 
 //display: contents;
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
+  .logo {
+    width: 50px;
+  }
   p {
     display: none;
+  }
+  .linksContainer {
+    max-width: 200px;
+    width: 200px;
+
+    Span {
+      display: none;
+    }
   }
   // .left .right .linksContainer .logo .icon {
   //   display: none;
