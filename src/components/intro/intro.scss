@@ -5,6 +5,7 @@
   .left {
     flex: 0.5;
     background-color: lightseagreen;
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,12 +13,17 @@
     .imgContainer {
       width: 45vw;
       height: 45vw;
+      max-height: 1000px;
+      max-width: 1000px;
+      z-index: 5;
+
       background-color: red;
       border-radius: 50%;
       display: flex;
       align-items: flex-end;
       justify-content: center;
-      // float: left;
+      float: right;
+      border: 5px solid #c62368;
 
       .img {
         height: 45vw;
@@ -38,14 +44,17 @@
       justify-content: center;
 
       h1 {
-        font-size: 60px;
+        // font-size: 60px;
+        font-size: clamp(2vw, 4.5vh, 4.5vh);
         margin: 10px 0;
       }
       h2 {
-        font-size: 35px;
+        // font-size: 35px;
+        font-size: clamp(1.25vw, 2.5vh, 2.5vh);
       }
       h3 {
-        font-size: 30px;
+        // font-size: 30px;
+        font-size: clamp(1vw, 2.25vh, 2.25vh);
         span {
           font-size: inherit;
           color: cadetblue;

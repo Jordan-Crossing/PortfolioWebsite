@@ -13,9 +13,9 @@ export default function Intro() {
           <h2>Hi there, I'm</h2>
           <h1>Jordan</h1>
           <h3>
-            Front-end Software engineer <span>extraordinaire</span>
+            Software engineer <span>& </span>
           </h3>
-          <a href="#showcase">Next</a>
+          {/* <a href="#showcase">Next</a> */}
         </div>
       </div>
       <img
