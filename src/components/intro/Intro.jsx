@@ -9,10 +9,15 @@ export default function Intro() {
     init(textRef.current, {
       showCursor: false,
       strings: [
-        "silly billy",
-        "Potato chip lover",
-        "gelato connoisseur",
-        "Totally not a robot",
+        "Curious",
+        "Friendly",
+        "Gelato Connoisseur",
+        "Lateral thinker",
+        "Fitness Fanatic",
+        "Extrovert",
+        "Mindful",
+        "Tinkerer",
+        "Introspective",
       ],
     });
   }, []);
