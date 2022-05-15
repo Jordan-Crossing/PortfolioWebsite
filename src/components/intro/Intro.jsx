@@ -7,17 +7,16 @@ export default function Intro() {
 
   useEffect(() => {
     init(textRef.current, {
-      showCursor: false,
+      disableBackTyping: true,
+      backSpeed: 15,
+      typeSpeed: 75,
+      backDelay: 2000,
+      showCursor: true,
       strings: [
-        "Curious",
-        "Friendly",
-        "Gelato Connoisseur",
-        "Lateral thinker",
-        "Fitness Fanatic",
-        "Extrovert",
-        "Mindful",
-        "Tinkerer",
-        "Introspective",
+        "Software Engineering, Scalability, Innovation, Design, User Experience, People",
+
+        "Lets just say....",
+        "People & Software",
       ],
     });
   }, []);
@@ -25,20 +24,23 @@ export default function Intro() {
   return (
     <div className="intro" id="intro">
       <div className="left">
-        <div className="imgContainer">
+        {/* <div className="imgContainer">
           <img src="img/PeanutProfile.jpg" alt="cat" />
-        </div>
+        </div> */}
       </div>
       <div className="right">
         <div className="wrapper">
-          {/* <h2>&nbsp;Hi there, I'm</h2> */}
-          <h1>&nbsp;Jordan</h1>
+          <h3>Hi, I'm</h3>
+          <h1>Jordan.</h1>
           <h3>
-            &nbsp;Software Engineer
-            <br /> &nbsp;+
-            <br /> <span></span>&nbsp;
-            <span ref={textRef}> </span>
+            Self taught & passionate about
+            {/* <br /> &nbsp;about */}
+            {/* <br /> <span></span>&nbsp; */}
           </h3>
+          <h2>
+            <span ref={textRef}> </span>
+          </h2>
+
           {/* <a href="#showcase">Next</a> */}
         </div>
       </div>

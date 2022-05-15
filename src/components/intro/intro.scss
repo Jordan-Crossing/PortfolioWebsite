@@ -9,7 +9,7 @@
   text-align: center;
 
   .left {
-    flex: 0.4;
+    flex: 0;
     background-color: lightseagreen;
     background-color: white;
     display: flex;
@@ -44,7 +44,7 @@
     }
   }
   .right {
-    flex: 0.6;
+    flex: 1;
     background-color: white;
     position: relative;
     display: flex;
@@ -72,14 +72,15 @@
       h2 {
         // font-size: 35px;
         font-size: clamp(5vh, 3.75vw, 3.75vw);
+        color: $mainColor;
         text-shadow: 1px 1px 2px #474747;
-        font-weight: 500;
+        font-weight: 400;
       }
       h3 {
         // font-size: 30px;
-        font-size: clamp(4vh, 3.5vw, 3.5vw);
+        font-size: clamp(3vh, 2.5vw, 2.5vw);
         text-shadow: 1px 1px 2px #474747;
-        font-weight: 500;
+        font-weight: 300;
         span {
           font-size: inherit;
 
