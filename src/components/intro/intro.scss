@@ -57,7 +57,7 @@
       // padding-left: 50px;
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
+      justify-content: center;
       align-items: center;
       word-spacing: 0.3em;
 
@@ -113,6 +113,12 @@
   position: absolute;
   bottom: 0vh;
   width: 100vw;
+}
+
+.flip {
+  transform: rotate(180deg);
+  position: absolute;
+  top: 0vh;
 }
 
 @media (max-width: 1400px) {
