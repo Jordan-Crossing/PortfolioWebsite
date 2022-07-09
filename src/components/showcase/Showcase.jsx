@@ -6,13 +6,33 @@ export default function Showcase() {
     <div className="showcase" id="showcase">
       <h1>Showcase</h1>
       <ul>
-        <li>Featured</li>
+        <li className="active">Featured</li>
         <li>Featured</li>
         <li>Featured</li>
         <li>Featured</li>
         <li>Featured</li>
       </ul>
       <div className="container">
+        <div className="item">
+          <img src={laserCat} alt="" id="laserCat" />
+          <h3>bank</h3>
+        </div>
+        <div className="item">
+          <img src={laserCat} alt="" id="laserCat" />
+          <h3>bank</h3>
+        </div>
+        <div className="item">
+          <img src={laserCat} alt="" id="laserCat" />
+          <h3>bank</h3>
+        </div>
+        <div className="item">
+          <img src={laserCat} alt="" id="laserCat" />
+          <h3>bank</h3>
+        </div>
+        <div className="item">
+          <img src={laserCat} alt="" id="laserCat" />
+          <h3>bank</h3>
+        </div>
         <div className="item">
           <img src={laserCat} alt="" id="laserCat" />
           <h3>bank</h3>
