@@ -19,7 +19,7 @@ export default function Showcase() {
         </div>
         <div className="item">
           <img src={laserCat} alt="" id="laserCat" />
-          <h3>bank</h3>
+          <h3>banktime</h3>
         </div>
         <div className="item">
           <img src={laserCat} alt="" id="laserCat" />
