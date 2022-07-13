@@ -1,16 +1,42 @@
 import "./showcase.scss";
 import laserCat from "../../assets/LaserCat.jpg";
+import PortfolioList from "../portfolioList/PortfolioList.jsx";
 
 export default function Showcase() {
+  const list = [
+    {
+      id: "featured",
+      title: "featured",
+    },
+    {
+      id: "featured",
+      title: "featured",
+    },
+    {
+      id: "featured",
+      title: "featured",
+    },
+    {
+      id: "featured",
+      title: "featured",
+    },
+    {
+      id: "featured",
+      title: "featured",
+    },
+    {
+      id: "featured",
+      title: "featured",
+    },
+  ];
+
   return (
     <div className="showcase" id="showcase">
       <h1>Showcase</h1>
       <ul>
-        <li className="active">Featured</li>
-        <li>Featured</li>
-        <li>Featured</li>
-        <li>Featured</li>
-        <li>Featured</li>
+        {list.map((item) => (
+          <PortfolioList title={item.title} />
+        ))}
       </ul>
       <div className="container">
         <div className="item">
