@@ -6,7 +6,7 @@ export default function Showcase() {
   const list = [
     {
       id: "featured",
-      title: "featured",
+      title: "not featured",
     },
     {
       id: "featured",
@@ -41,7 +41,7 @@ export default function Showcase() {
       <div className="container">
         <div className="item">
           <img src={laserCat} alt="" id="laserCat" />
-          <h3>bank</h3>
+          <h3>myBank</h3>
         </div>
         <div className="item">
           <img src={laserCat} alt="" id="laserCat" />
