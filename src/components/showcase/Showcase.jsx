@@ -1,32 +1,34 @@
 import "./showcase.scss";
 import laserCat from "../../assets/LaserCat.jpg";
-import PortfolioList from "../portfolioList/PortfolioList.jsx";
+import ShowcaseList from "../showcaseList/ShowcaseList.jsx";
+import { useEffect, useState } from "react";
 
 export default function Showcase() {
+  const [selected, setSelected] = useState("featured");
   const list = [
     {
-      id: "featured",
-      title: "not featured",
+      id: "cat",
+      title: "cat",
     },
     {
-      id: "featured",
-      title: "featured",
+      id: "dog",
+      title: "dog",
     },
     {
-      id: "featured",
-      title: "featured",
+      id: "rabbit",
+      title: "rabbit",
     },
     {
-      id: "featured",
-      title: "featured",
+      id: "owl",
+      title: "owl",
     },
     {
-      id: "featured",
-      title: "featured",
+      id: "goat",
+      title: "goat",
     },
     {
-      id: "featured",
-      title: "featured",
+      id: "cow",
+      title: "cow",
     },
   ];
 
@@ -35,7 +37,12 @@ export default function Showcase() {
       <h1>Showcase</h1>
       <ul>
         {list.map((item) => (
-          <PortfolioList title={item.title} />
+          <ShowcaseList
+            title={item.title}
+            active={selected === item.id}
+            setSelected={setSelected}
+            id={item.id}
+          />
         ))}
       </ul>
       <div className="container">
