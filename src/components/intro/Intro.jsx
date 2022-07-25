@@ -30,7 +30,7 @@ export default function Intro() {
           <h3>Hi, I'm</h3>
           <h1>Jordan.</h1>
           <h3>
-            Thanks for checking out my projects which use
+            This is my porfolio to showcase my skill with
             {/* <br /> &nbsp;about */}
             {/* <br /> <span></span>&nbsp; */}
           </h3>

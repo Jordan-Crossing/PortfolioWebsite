@@ -1,10 +1,19 @@
 import "./showcase.scss";
-import laserCat from "../../assets/LaserCat.jpg";
+import laserCat from "../../assets/img/PeanutProfile.jpg";
 import ShowcaseList from "../showcaseList/ShowcaseList.jsx";
 import { useEffect, useState } from "react";
+import {
+  catShowcase,
+  dogShowcase,
+  rabbitShowcase,
+  owlShowcase,
+  goatShowcase,
+  cowShowcase,
+} from "../../data.js";
 
 export default function Showcase() {
   const [selected, setSelected] = useState("featured");
+  const [data, setData] = useState([]);
   const list = [
     {
       id: "cat",
@@ -32,6 +41,31 @@ export default function Showcase() {
     },
   ];
 
+  useEffect(() => {
+    switch (selected) {
+      case "cat":
+        setData(catShowcase);
+        break;
+      case "dog":
+        setData(dogShowcase);
+        break;
+      case "rabbit":
+        setData(rabbitShowcase);
+        break;
+      case "owl":
+        setData(owlShowcase);
+        break;
+      case "goat":
+        setData(goatShowcase);
+        break;
+      case "cow":
+        setData(cowShowcase);
+        break;
+      default:
+        setData(cowShowcase);
+    }
+  }, [selected]);
+
   return (
     <div className="showcase" id="showcase">
       <h1>Showcase</h1>
@@ -46,31 +80,14 @@ export default function Showcase() {
         ))}
       </ul>
       <div className="container">
-        <div className="item">
-          <img src={laserCat} alt="" id="laserCat" />
-          <h3>myBank</h3>
-        </div>
-        <div className="item">
-          <img src={laserCat} alt="" id="laserCat" />
-          <h3>banktime</h3>
-        </div>
-        <div className="item">
-          <img src={laserCat} alt="" id="laserCat" />
-          <h3>bank</h3>
-        </div>
-        <div className="item">
-          <img src={laserCat} alt="" id="laserCat" />
-          <h3>bank</h3>
-        </div>
-        <div className="item">
-          <img src={laserCat} alt="" id="laserCat" />
-          <h3>bank</h3>
-        </div>
-        <div className="item">
-          <img src={laserCat} alt="" id="laserCat" />
-          <h3>bank</h3>
-        </div>
+        {data.map((d) => (
+          <div className="item">
+            <img src={d.img} alt="" id="laserCat" />
+            <h3>{d.title}</h3>
+          </div>
+        ))}
       </div>
+      {/* <img src={require("../../assets/img/PeanutProfile.jpg").default} /> */}
       <img
         src={require("./layered-waves-haikei.svg").default}
         alt="svg decoration"
