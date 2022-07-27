@@ -18,8 +18,8 @@ function App() {
         <Intro />
         <Showcase />
         <Testimonials />
-        <Works />
         <Contact />
+        <Works />
       </div>
     </div>
   );

@@ -34,7 +34,7 @@ export const catShowcase = [
 export const dogShowcase = [
   {
     id: 1,
-    title: "",
+    title: "Good Dog",
     img: "./img/PancakeProfile.jpg",
   },
   {
