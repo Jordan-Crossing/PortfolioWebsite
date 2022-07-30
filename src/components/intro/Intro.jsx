@@ -1,7 +1,6 @@
 import "./intro.scss";
 import { init } from "ityped";
 import { useEffect, useRef } from "react";
-import { useSpring, animated } from "react-spring";
 
 export default function Intro() {
   const textRef = useRef();
@@ -30,7 +29,7 @@ export default function Intro() {
           <h3>Hi, I'm</h3>
           <h1>Jordan.</h1>
           <h3>
-            This is my porfolio to showcase my skill with
+            Welcome to my porfolio.
             {/* <br /> &nbsp;about */}
             {/* <br /> <span></span>&nbsp; */}
           </h3>
@@ -47,7 +46,7 @@ export default function Intro() {
         alt="svg decoration"
         className="svgWave"
       />
-      <svg
+      {/* <svg
         height="600"
         id="visual"
         width="900"
@@ -69,7 +68,7 @@ export default function Intro() {
             fill="#BB004B"
           />
         </g>
-      </svg>
+      </svg> */}
       <img
         src={require("./layered-waves-haikei.svg").default}
         alt="svg decoration"

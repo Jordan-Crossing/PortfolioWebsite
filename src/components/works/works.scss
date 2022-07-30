@@ -4,8 +4,8 @@
   align-items: center;
   justify-content: center;
 
-  .slider {
-    height: 350px;
+  .gallery {
+    height: 75vh;
     display: flex;
     position: ablsolute;
     left: 0;
@@ -17,7 +17,7 @@
       justify-content: center;
 
       .item {
-        width: 700px;
+        width: 75vw;
         height: 90%;
         background-color: white;
         border-radius: 20px;
