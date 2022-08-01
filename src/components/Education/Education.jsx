@@ -3,7 +3,11 @@ import "./education.scss";
 
 export default function Education() {
   return (
-    <div className="education" id="education">
+    <div
+      className="education"
+      id="education"
+      style={{ backgroundImage: `url(/img/stacked-steps-haikei.svg)` }}
+    >
       <div className="title">
         <h1>Education</h1>
         <p>I would like to thank these giants whose sholders I stand upon.</p>
@@ -21,7 +25,7 @@ export default function Education() {
           <div className="bottom">
             " Absolutly fantastic course. In particular the series of lectures
             and the energy that David J. Malan brings help to make at first
-            duntingly complex topics such as algoriths & data structures or
+            duntingly complex topics such as algorithms & data structures or
             memory allocation in C very approachable. "
           </div>
         </div>
@@ -59,6 +63,11 @@ export default function Education() {
           </div>
         </div>
       </div>
+      {/* <img
+        src="./img/stacked-steps-haikei.svg"
+        alt="svg decoration"
+        className="svg"
+      /> */}
     </div>
   );
 }
