@@ -1,9 +1,9 @@
 import Contact from "./components/contact/Contact.jsx";
 import Intro from "./components/intro/Intro.jsx";
-import Showcase from "./components/showcase/Showcase.jsx";
-import Testimonials from "./components/testimonials/Testimonials.jsx";
+import Projects from "./components/Projects/Projects.jsx";
+import Education from "./components/Education/Education.jsx";
 import Topbar from "./components/topbar/Topbar.jsx";
-import Works from "./components/works/Works.jsx";
+import Cats from "./components/cats/Cats.jsx";
 import "./app.scss";
 import { useState } from "react";
 import Menu from "./components/menu/Menu.jsx";
@@ -16,10 +16,10 @@ function App() {
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <div className="sections">
         <Intro />
-        <Showcase />
-        <Testimonials />
+        <Projects />
+        <Education />
         <Contact />
-        <Works />
+        <Cats />
       </div>
     </div>
   );

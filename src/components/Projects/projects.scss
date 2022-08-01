@@ -1,6 +1,6 @@
 @import "../../global.scss";
 
-.showcase {
+.projects {
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -56,7 +56,7 @@
 
       img {
         opacity: 0.2;
-        z-index: 0;
+        z-index: 1;
       }
     }
   }
@@ -66,4 +66,5 @@
   position: absolute;
   bottom: -92.5vh;
   width: 100vw;
+  pointer-events: none;
 }

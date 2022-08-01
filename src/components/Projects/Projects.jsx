@@ -1,4 +1,4 @@
-import "./showcase.scss";
+import "./projects.scss";
 import laserCat from "../../assets/img/PeanutProfile.jpg";
 import ShowcaseList from "../showcaseList/ShowcaseList.jsx";
 import { useEffect, useState } from "react";
@@ -11,7 +11,7 @@ import {
   cowShowcase,
 } from "../../data.js";
 
-export default function Showcase() {
+export default function Projects() {
   const [selected, setSelected] = useState("featured");
   const [data, setData] = useState([]);
   const list = [
@@ -67,8 +67,8 @@ export default function Showcase() {
   }, [selected]);
 
   return (
-    <div className="showcase" id="showcase">
-      <h1>Showcase</h1>
+    <div className="projects" id="projects">
+      <h1>Projects</h1>
       <ul>
         {list.map((item) => (
           <ShowcaseList
