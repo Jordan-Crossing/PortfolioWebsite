@@ -10,7 +10,7 @@ export default function Education() {
     >
       <div className="title">
         <h1>Education</h1>
-        <p>I would like to thank these giants whose sholders I stand upon.</p>
+        <p>I cant thank these guys enough.</p>
       </div>
       <div className="container">
         <div className="card">

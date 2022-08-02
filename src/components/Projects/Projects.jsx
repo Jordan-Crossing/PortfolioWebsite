@@ -11,9 +11,16 @@ import {
   cowShowcase,
 } from "../../data.js";
 
+import { AnimatePresence, motion } from "framer-motion";
+import Modal from "../modal/modal";
+
 export default function Projects() {
   const [selected, setSelected] = useState("featured");
   const [data, setData] = useState([]);
+  const [modalOpen, setModalOpen] = useState(false);
+  const close = () => setModalOpen(false);
+  const open = () => setModalOpen(true);
+
   const list = [
     {
       id: "cat",
@@ -68,7 +75,9 @@ export default function Projects() {
 
   return (
     <div className="projects" id="projects">
-      <h1>Projects</h1>
+      <h1
+      
+      >Projects</h1>
       <ul>
         {list.map((item) => (
           <ShowcaseList
@@ -79,12 +88,17 @@ export default function Projects() {
           />
         ))}
       </ul>
-      <div className="container">
+      <motion.div className="container">
         {data.map((d) => (
           <div className="item">
-            <img src={d.img} alt="" id="laserCat" />
+            <img
+              src={d.img}
+              alt=""
+              id="laserCat"
+              onClick={() => (modalOpen ? close() : open())}
+            />
             <h3>{d.title}</h3>
-          </div>
+          </motion.div>
         ))}
       </div>
       {/* <img src={require("../../assets/img/PeanutProfile.jpg").default} /> */}
@@ -94,6 +108,8 @@ export default function Projects() {
         className="svgWave2"
       />
       {/* <p>showcase</p> */}
+
+      {modalOpen && <Modal modalOpen={modalOpen} handleClose={close} />}
     </div>
   );
 }
