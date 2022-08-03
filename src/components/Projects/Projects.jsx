@@ -12,7 +12,7 @@ import {
 } from "../../data.js";
 
 import { AnimatePresence, motion } from "framer-motion";
-import Modal from "../modal/modal";
+import Modal from "../modal/Modal";
 
 export default function Projects() {
   const [selected, setSelected] = useState("featured");
@@ -75,9 +75,7 @@ export default function Projects() {
 
   return (
     <div className="projects" id="projects">
-      <h1
-      
-      >Projects</h1>
+      <h1>Projects</h1>
       <ul>
         {list.map((item) => (
           <ShowcaseList
@@ -88,7 +86,8 @@ export default function Projects() {
           />
         ))}
       </ul>
-      <motion.div className="container">
+      <button onClick={() => (modalOpen ? close() : open())}>hello</button>
+      <div className="container">
         {data.map((d) => (
           <div className="item">
             <img
@@ -98,7 +97,7 @@ export default function Projects() {
               onClick={() => (modalOpen ? close() : open())}
             />
             <h3>{d.title}</h3>
-          </motion.div>
+          </div>
         ))}
       </div>
       {/* <img src={require("../../assets/img/PeanutProfile.jpg").default} /> */}
