@@ -1,5 +1,5 @@
 import { AnimatePresence, motion } from "framer-motion";
-
+console.log("backdrop");
 const Backdrop = ({ children, onClick }) => {
   return (
     <motion.div

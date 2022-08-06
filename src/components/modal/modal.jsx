@@ -1,6 +1,8 @@
 import { AnimatePresence, motion } from "framer-motion";
 import Backdrop from "../backdrop/backdrop";
 
+console.log("Modal");
+
 const dropIn = {
   hidden: {
     y: "-100vh",
@@ -32,7 +34,9 @@ const Modal = ({ handleClose, text }) => {
         initial="hidden"
         animate="visible"
         exit="exit"
-      ></motion.div>
+      >
+        <p>hello</p>
+      </motion.div>
     </Backdrop>
   );
 };

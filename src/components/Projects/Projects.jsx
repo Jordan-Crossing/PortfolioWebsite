@@ -86,7 +86,7 @@ export default function Projects() {
           />
         ))}
       </ul>
-      <button onClick={() => (modalOpen ? close() : open())}>hello</button>
+      {/* <button onClick={() => (modalOpen ? close() : open())}>hello</button> */}
       <div className="container">
         {data.map((d) => (
           <div className="item">
