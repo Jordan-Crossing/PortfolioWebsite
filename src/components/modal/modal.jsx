@@ -1,5 +1,6 @@
 import { AnimatePresence, motion } from "framer-motion";
 import Backdrop from "../backdrop/backdrop";
+import "./modal.scss";
 
 console.log("Modal");
 
