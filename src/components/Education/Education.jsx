@@ -40,9 +40,9 @@ export default function Education() {
           </div>
           <div className="bottom">
             " Scrimba's front-end career path is an absoute wealth of knowledge
-            that reall helped to build my confidence by teaching though
-            countless projects. Starting out with simple HTML and CSS all the
-            way to managing state in react and making components reusable. "
+            that helped to build my confidence by teaching though countless
+            projects. Starting out with simple HTML and CSS all the way to
+            managing state in react and making components reusable. "
           </div>
         </div>
         <div className="card">

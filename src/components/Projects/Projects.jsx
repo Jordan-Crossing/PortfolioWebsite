@@ -96,6 +96,12 @@ export default function Projects() {
               id="laserCat"
               onClick={() => (modalOpen ? close() : open())}
             />
+            {/* <AnimatePresence
+              initial={false}
+              exitBeforeEnter={true}
+              onExitComplete={() => null}
+            ></AnimatePresence>
+            {modalOpen && <Modal modalOpen={modalOpen} handleClose={close} />} */}
             <h3>{d.title}</h3>
           </div>
         ))}

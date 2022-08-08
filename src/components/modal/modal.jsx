@@ -38,6 +38,11 @@ const Modal = ({ handleClose, text }) => {
       >
         <p>hello</p>
       </motion.div>
+      {/* <AnimatePresence
+        initial={false}
+        exitBeforeEnter={true}
+        onExitComplete={() => null}
+      ></AnimatePresence> */}
     </Backdrop>
   );
 };
