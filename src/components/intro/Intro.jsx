@@ -13,7 +13,7 @@ export default function Intro() {
       loop: true,
       backDelay: 2000,
       showCursor: true,
-      strings: ["JavaScript", "React", "HTML", "CSS", "Reponsive Design"],
+      strings: ["JavaScript", "React", "HTML", "CSS", "Responsive Design"],
     });
   }, []);
 
@@ -29,7 +29,7 @@ export default function Intro() {
           <h3>Hi, I'm</h3>
           <h1>Jordan.</h1>
           <h3>
-            Welcome to my porfolio.
+            Welcome to my portfolio.
             {/* <br /> &nbsp;about */}
             {/* <br /> <span></span>&nbsp; */}
           </h3>
