@@ -15,11 +15,21 @@ import { AnimatePresence, motion } from "framer-motion";
 import Modal from "../modal/Modal";
 
 export default function Projects() {
-  const [selected, setSelected] = useState("featured");
+  const [selected, setSelected] = useState("cat");
   const [data, setData] = useState([]);
+  const [modalDataId, setModalDataId] = useState(undefined);
   const [modalOpen, setModalOpen] = useState(false);
+
   const close = () => setModalOpen(false);
-  const open = () => setModalOpen(true);
+  // const open = () => setModalOpen(true);
+
+  function open(dataId) {
+    setModalOpen(true);
+    setModalDataId(dataId);
+    console.log(dataId);
+    console.log(selected);
+    console.log(modalDataId);
+  }
 
   const list = [
     {
@@ -94,7 +104,7 @@ export default function Projects() {
               src={d.img}
               alt=""
               id="laserCat"
-              onClick={() => (modalOpen ? close() : open())}
+              onClick={() => (modalOpen ? close() : open(d.id))}
             />
             {/* <AnimatePresence
               initial={false}
@@ -114,7 +124,14 @@ export default function Projects() {
       />
       {/* <p>showcase</p> */}
 
-      {modalOpen && <Modal modalOpen={modalOpen} handleClose={close} />}
+      {modalOpen && (
+        <Modal
+          modalOpen={modalOpen}
+          handleClose={close}
+          text={modalDataId}
+          project={selected}
+        />
+      )}
     </div>
   );
 }

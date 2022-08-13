@@ -25,7 +25,7 @@ const dropIn = {
   },
 };
 
-const Modal = ({ handleClose, text }) => {
+const Modal = ({ handleClose, text, project }) => {
   return (
     <Backdrop onClick={handleClose}>
       <motion.div
@@ -36,7 +36,9 @@ const Modal = ({ handleClose, text }) => {
         animate="visible"
         exit="exit"
       >
-        <p>hello</p>
+        <p>
+          {text} {project}
+        </p>
       </motion.div>
       {/* <AnimatePresence
         initial={false}
