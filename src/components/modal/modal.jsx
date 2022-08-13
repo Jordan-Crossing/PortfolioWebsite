@@ -4,6 +4,8 @@ import "./modal.scss";
 
 console.log("Modal");
 
+const paragraph = { message: <p>hello</p> };
+
 const dropIn = {
   hidden: {
     y: "-100vh",
@@ -27,7 +29,7 @@ const dropIn = {
 
 const Modal = ({ handleClose, text, project }) => {
   return (
-    <Backdrop onClick={handleClose}>
+    <Backdrop children={paragraph.message} onClick={handleClose}>
       <motion.div
         onClick={(e) => e.stopPropagation()}
         className="modal"
