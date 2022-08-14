@@ -3,19 +3,19 @@ import laserCat from "../../assets/img/PeanutProfile.jpg";
 import ShowcaseList from "../showcaseList/ShowcaseList.jsx";
 import { useEffect, useState } from "react";
 import {
-  catShowcase,
-  dogShowcase,
-  rabbitShowcase,
+  reactShowcase,
+  javascriptShowcase,
+  portfolioShowcase,
   owlShowcase,
   goatShowcase,
   cowShowcase,
 } from "../../data.js";
 
 import { AnimatePresence, motion } from "framer-motion";
-import Modal from "../modal/Modal";
+import Modal from "../modal/Modal.jsx";
 
 export default function Projects() {
-  const [selected, setSelected] = useState("cat");
+  const [selected, setSelected] = useState("reactShowcase");
   const [data, setData] = useState([]);
   const [modalDataId, setModalDataId] = useState(undefined);
   const [modalOpen, setModalOpen] = useState(false);
@@ -33,41 +33,29 @@ export default function Projects() {
 
   const list = [
     {
-      id: "cat",
-      title: "cat",
+      id: "reactShowcase",
+      title: "React.js",
     },
     {
-      id: "dog",
-      title: "dog",
+      id: "javascriptShowcase",
+      title: "JavaScript",
     },
     {
-      id: "rabbit",
-      title: "rabbit",
-    },
-    {
-      id: "owl",
-      title: "owl",
-    },
-    {
-      id: "goat",
-      title: "goat",
-    },
-    {
-      id: "cow",
-      title: "cow",
+      id: "portfolio",
+      title: "Portfolio site",
     },
   ];
 
   useEffect(() => {
     switch (selected) {
-      case "cat":
-        setData(catShowcase);
+      case "reactShowcase":
+        setData(reactShowcase);
         break;
-      case "dog":
-        setData(dogShowcase);
+      case "javascriptShowcase":
+        setData(javascriptShowcase);
         break;
-      case "rabbit":
-        setData(rabbitShowcase);
+      case "portfolio":
+        setData(portfolioShowcase);
         break;
       case "owl":
         setData(owlShowcase);

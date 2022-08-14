@@ -1,10 +1,11 @@
+import Spotlight from "../spotlight/Spotlight";
 import { AnimatePresence, motion } from "framer-motion";
 import Backdrop from "../backdrop/backdrop";
 import "./modal.scss";
 
 console.log("Modal");
 
-const paragraph = { message: <p>hello</p> };
+const paragraph = { message: "" };
 
 const dropIn = {
   hidden: {
@@ -38,9 +39,7 @@ const Modal = ({ handleClose, text, project }) => {
         animate="visible"
         exit="exit"
       >
-        <p>
-          {text} {project}
-        </p>
+        <Spotlight text={text} project={project} />
       </motion.div>
       {/* <AnimatePresence
         initial={false}

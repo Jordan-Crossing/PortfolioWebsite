@@ -29,7 +29,7 @@
   }
 
   p {
-    font-size: clamp(20px, 2vh, 1.25vw);
+    font-size: clamp(1vw, 2vh, 1.25vw);
   }
 
   h1 {
@@ -37,7 +37,7 @@
   }
 
   h3 {
-    font-size: clamp(2vw, 3vh, 2vw);
+    font-size: clamp(2vw, 2vh, 2vw);
   }
 
   h4 {
@@ -91,7 +91,7 @@
       }
 
       .bottom {
-        font-size: clamp(1.5vw, 2.5vh, 1.25vw);
+        // font-size: clamp(1.5vw, 1.5vh, 1.25vh);
         display: flex;
         align-items: center;
         justify-content: center;

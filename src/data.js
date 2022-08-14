@@ -1,98 +1,68 @@
-export const catShowcase = [
+export const reactShowcase = [
   {
     id: 1,
-    title: "Good Cat",
+    title: "Tenzies game",
     img: "./img/PeanutProfile.jpg",
   },
   {
     id: 2,
-    title: "",
+    title: "Meme generator",
     img: "",
   },
   {
     id: 3,
-    title: "",
+    title: "E-commerce with checkout",
     img: "",
   },
   {
     id: 4,
-    title: "",
-    img: "",
-  },
-  {
-    id: 5,
-    title: "",
-    img: "",
-  },
-  {
-    id: 6,
-    title: "",
+    title: "Speed typing",
     img: "",
   },
 ];
 
-export const dogShowcase = [
+export const javascriptShowcase = [
   {
     id: 1,
-    title: "Good Dog",
+    title: "Blackjack game",
     img: "./img/PancakeProfile.jpg",
   },
   {
     id: 2,
-    title: "",
+    title: "Dice game",
     img: "",
   },
   {
     id: 3,
-    title: "",
+    title: "RPG",
     img: "",
   },
   {
     id: 4,
-    title: "",
-    img: "",
-  },
-  {
-    id: 5,
-    title: "",
-    img: "",
-  },
-  {
-    id: 6,
-    title: "",
+    title: "API Dashboard",
     img: "",
   },
 ];
 
-export const rabbitShowcase = [
+export const portfolioShowcase = [
   {
     id: 1,
-    title: "",
+    title: "SVG",
     img: "",
   },
   {
     id: 2,
-    title: "",
+    title: "Framer Motion",
     img: "",
   },
   {
     id: 3,
-    title: "",
+    title: "i-Typed",
     img: "",
   },
   {
     id: 4,
-    title: "",
-    img: "",
-  },
-  {
-    id: 5,
-    title: "",
-    img: "",
-  },
-  {
-    id: 6,
-    title: "",
+    title: "Responsive Design",
     img: "",
   },
 ];

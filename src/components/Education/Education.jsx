@@ -23,10 +23,12 @@ export default function Education() {
             <h4>Intro to Computer Science</h4>
           </div>
           <div className="bottom">
-            " Absolutly fantastic course. In particular the series of lectures
-            and the energy that David J. Malan brings help to make at first
-            duntingly complex topics such as algorithms & data structures or
-            memory allocation in C very approachable. "
+            <p>
+              " Absolutly fantastic course. In particular the series of lectures
+              and the energy that David J. Malan brings help to make at first
+              duntingly complex topics such as algorithms & data structures or
+              memory allocation in C very approachable. "
+            </p>
           </div>
         </div>
         <div className="card featured">
@@ -39,10 +41,12 @@ export default function Education() {
             <h4>Front-End Career Path</h4>
           </div>
           <div className="bottom">
-            " Scrimba's front-end career path is an absoute wealth of knowledge
-            that helped to build my confidence by teaching though countless
-            projects. Starting out with simple HTML and CSS all the way to
-            managing state in react and making components reusable. "
+            <p>
+              " Scrimba's front-end career path is an absoute wealth of
+              knowledge that helped to build my confidence by teaching though
+              countless projects. Starting out with simple HTML and CSS all the
+              way to managing state in react and making components reusable. "
+            </p>
           </div>
         </div>
         <div className="card">
@@ -56,10 +60,12 @@ export default function Education() {
             <h4>JavaScript Algorithms & Data Structures</h4>
           </div>
           <div className="bottom">
-            " It is almost unbelievable that such a in depth education can be
-            free. While projects are great to see how things all work together I
-            really appreciate how freeCodeCamp has individual modules for every
-            little thing, its very useful of isolating knowledge gaps. "
+            <p>
+              " It is almost unbelievable that such a in depth education can be
+              free. While projects are great to see how things all work together
+              I really appreciate how freeCodeCamp has individual modules for
+              every little thing, its very useful of isolating knowledge gaps. "
+            </p>
           </div>
         </div>
       </div>
