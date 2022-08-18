@@ -29,6 +29,7 @@ export default function Projects() {
     console.log(dataId);
     console.log(selected);
     console.log(modalDataId);
+    console.log(data);
   }
 
   const list = [
@@ -118,6 +119,7 @@ export default function Projects() {
           handleClose={close}
           text={modalDataId}
           project={selected}
+          data={data}
         />
       )}
     </div>

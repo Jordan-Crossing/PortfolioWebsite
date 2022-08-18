@@ -28,7 +28,7 @@ const dropIn = {
   },
 };
 
-const Modal = ({ handleClose, text, project }) => {
+const Modal = ({ handleClose, text, project, data }) => {
   return (
     <Backdrop children={paragraph.message} onClick={handleClose}>
       <motion.div
@@ -39,7 +39,7 @@ const Modal = ({ handleClose, text, project }) => {
         animate="visible"
         exit="exit"
       >
-        <Spotlight text={text} project={project} />
+        <Spotlight text={text} project={project} data={data} />
       </motion.div>
       {/* <AnimatePresence
         initial={false}
