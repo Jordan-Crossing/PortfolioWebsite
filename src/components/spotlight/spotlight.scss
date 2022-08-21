@@ -1,4 +1,43 @@
-.cover {
+.spotlight {
   width: 100%;
-  height: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 5vh;
+}
+
+.top {
+  flex: 0.5;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-direction: column;
+}
+.cover {
+  height: 35vh;
+  width: auto;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.bottom {
+  flex: 0.5;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border: 2px solid black;
+
+  .left {
+    display: flex;
+
+    flex: 0.5;
+    justify-content: center;
+  }
+
+  .right {
+    display: flex;
+    justify-content: center;
+    flex: 0.5;
+  }
 }

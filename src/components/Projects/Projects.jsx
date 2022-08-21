@@ -1,5 +1,5 @@
 import "./projects.scss";
-import laserCat from "../../assets/img/PeanutProfile.jpg";
+
 import ShowcaseList from "../showcaseList/ShowcaseList.jsx";
 import { useEffect, useState } from "react";
 import {
@@ -11,7 +11,6 @@ import {
   cowShowcase,
 } from "../../data.js";
 
-import { AnimatePresence, motion } from "framer-motion";
 import Modal from "../modal/Modal.jsx";
 
 export default function Projects() {

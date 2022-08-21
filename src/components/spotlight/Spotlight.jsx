@@ -1,12 +1,3 @@
-import { display } from "@mui/system";
-import {
-  reactShowcase,
-  javascriptShowcase,
-  portfolioShowcase,
-  owlShowcase,
-  goatShowcase,
-  cowShowcase,
-} from "../../data.js";
 import "./spotlight.scss";
 
 export default function Spotlight({ text, project, data }) {
@@ -16,15 +7,30 @@ export default function Spotlight({ text, project, data }) {
   const displayedProject = data[displayedProjectId];
   console.log(displayedProjectId);
   return (
-    <div>
-      text:{text}
-      <br></br>
-      project:{project}
-      <br></br>
-      displayedProjectId:{displayedProjectId}
-      <br></br>
-      displayedProject:{displayedProject.img}
-      <img src={displayedProject.img} className="cover" alt="cover" />
+    <div className="spotlight">
+      <div className="top">
+        <img src={displayedProject.img} className="cover" alt="cover" />
+      </div>
+      <div className="bottom">
+        <div className="left">
+          text:{text}
+          <br></br>
+          project:{project}
+          <br></br>
+          displayedProjectId:{displayedProjectId}
+          <br></br>
+          displayedProject:{displayedProject.img}
+        </div>
+        <div className="right">
+          text:{text}
+          <br></br>
+          project:{project}
+          <br></br>
+          displayedProjectId:{displayedProjectId}
+          <br></br>
+          displayedProject:{displayedProject.img}
+        </div>
+      </div>
     </div>
   );
 }
