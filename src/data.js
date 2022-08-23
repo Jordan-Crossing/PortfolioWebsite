@@ -2,45 +2,45 @@ export const reactShowcase = [
   {
     id: 1,
     title: "Tenzies game",
-    img: "./img/PeanutProfile.jpg",
+    img: "./img/Tenzies.gif",
   },
   {
     id: 2,
     title: "Meme generator",
-    img: "",
+    img: "./img/MemeGenerator.gif",
   },
   {
     id: 3,
     title: "E-commerce with checkout",
-    img: "",
+    img: "./img/Ecom.gif",
   },
   {
     id: 4,
     title: "Speed typing",
-    img: "",
+    img: "./img/SpeedType.gif",
   },
 ];
 
 export const javascriptShowcase = [
   {
     id: 1,
-    title: "Blackjack game",
-    img: "./img/PancakeProfile.jpg",
+    title: "Game of War",
+    img: "./img/GameOfWar.gif",
   },
   {
     id: 2,
     title: "Dice game",
-    img: "",
+    img: "./img/Dice.gif",
   },
   {
     id: 3,
     title: "RPG",
-    img: "",
+    img: "./img/RPG.gif",
   },
   {
     id: 4,
     title: "API Dashboard",
-    img: "",
+    img: "./img/APIDash.gif",
   },
 ];
 

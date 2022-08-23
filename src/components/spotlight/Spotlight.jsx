@@ -8,11 +8,11 @@ export default function Spotlight({ text, project, data }) {
   console.log(displayedProjectId);
   return (
     <div className="spotlight">
-      <div className="top">
+      <div className="Spotlighttop">
         <img src={displayedProject.img} className="cover" alt="cover" />
       </div>
-      <div className="bottom">
-        <div className="left">
+      <div className="Spotlightbottom">
+        <div className="Spotlightleft">
           <div className="techniques">
             <h1>Techniques:{text}</h1>
             <ul>
@@ -23,7 +23,7 @@ export default function Spotlight({ text, project, data }) {
             </ul>
           </div>
         </div>
-        <div className="right">
+        <div className="Spotlightright">
           <div className="purpose">
             <h1>text:{text}</h1>
             <br></br>
