@@ -1,28 +1,40 @@
-.Cats {
+.cats {
   background-color: mediumslateblue;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: visible;
+}
+
+.carousel-container {
+}
+
+.carousel {
+  display: flex;
+  cursor: grab;
+  // align-items: center;
+  // justify-content: center;
+  background-color: red;
+  overflow: hidden;
 }
 
 .carousel-item {
   min-height: 40rem;
   min-width: 30rem;
   padding: 40px;
+  overflow: visible;
 
   img {
     width: 100%;
     height: 100%;
     border-radius: 2rem;
+    pointer-events: none;
   }
 }
 
 .inner-carousel {
   display: flex;
   background-color: lightblue;
-}
-
-.carousel {
-  cursor: grab;
-  overflow: hidden;
+  align-items: center;
+  justify-content: center;
 }

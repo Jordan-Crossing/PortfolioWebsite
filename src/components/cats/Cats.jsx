@@ -4,19 +4,32 @@ import { useRef, useState, useEffect } from "react";
 import images from "../../images";
 
 export default function Cats() {
+  const [width, setWidth] = useState(0);
+  const carousel = useRef();
+
+  useEffect(() => {
+    setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
+  }, []);
+
   return (
     <div className="cats" id="cats">
-      <motion.div className="carousel">
-        <motion.div className="inner-carousel">
-          {images.map((image) => {
-            return (
-              <motion.div className="carousel-item">
-                <img src={image} alt="" />
-              </motion.div>
-            );
-          })}
+      <div className="carousel-container">
+        <motion.div ref={carousel} className="carousel">
+          <motion.div
+            drag="x"
+            dragConstraints={{ right: 0 }}
+            className="inner-carousel"
+          >
+            {images.map((image) => {
+              return (
+                <motion.div className="carousel-item">
+                  <img src={image} alt="" />
+                </motion.div>
+              );
+            })}
+          </motion.div>
         </motion.div>
-      </motion.div>
+      </div>
     </div>
   );
 }
