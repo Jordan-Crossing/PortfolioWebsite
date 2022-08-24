@@ -17,7 +17,7 @@ export default function Cats() {
         <motion.div ref={carousel} className="carousel">
           <motion.div
             drag="x"
-            dragConstraints={{ right: 0 }}
+            dragConstraints={{ right: 0, left: -width }}
             className="inner-carousel"
           >
             {images.map((image) => {
