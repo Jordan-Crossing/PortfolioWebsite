@@ -38,8 +38,14 @@ const Modal = ({ handleClose, text, project, data }) => {
         initial="hidden"
         animate="visible"
         exit="exit"
+        style={{ backgroundImage: `url(/img/layered-steps-haikei.svg)` }}
       >
-        <Spotlight text={text} project={project} data={data} />
+        <Spotlight
+          text={text}
+          project={project}
+          data={data}
+          style={{ backgroundImage: `url(/img/stacked-steps-haikei.svg)` }}
+        />
       </motion.div>
       {/* <AnimatePresence
         initial={false}
