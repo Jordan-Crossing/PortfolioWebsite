@@ -14,6 +14,7 @@ export default function Cats() {
   return (
     <div className="cats" id="cats">
       <div className="carousel-container">
+        <h1>Bonus Cat Photos.</h1>
         <motion.div ref={carousel} className="carousel">
           <motion.div
             drag="x"
