@@ -38,7 +38,7 @@ const Modal = ({ handleClose, text, project, data }) => {
         initial="hidden"
         animate="visible"
         exit="exit"
-        style={{ backgroundImage: `url(/img/layered-steps-haikei.svg)` }}
+        style={{ backgroundImage: `url(/img/neatlayered-steps-haikei.svg)` }}
       >
         <Spotlight
           text={text}

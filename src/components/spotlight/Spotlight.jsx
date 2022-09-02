@@ -14,24 +14,19 @@ export default function Spotlight({ text, project, data }) {
       <div className="Spotlightbottom">
         <div className="Spotlightleft">
           <div className="techniques">
-            <h1>Techniques:{text}</h1>
+            <h1>Techniques & tech </h1>
             <ul>
-              <li>Cat</li>
-              <li>Cat</li>
-              <li>Cat</li>
-              <li>Cat</li>
+              {displayedProject.tech.map((item) => (
+                <li> {item}</li>
+              ))}
             </ul>
           </div>
         </div>
         <div className="Spotlightright">
           <div className="purpose">
-            <h1>text:{text}</h1>
+            <h1> Description </h1>
             <br></br>
-            project:{project}
-            <br></br>
-            displayedProjectId:{displayedProjectId}
-            <br></br>
-            displayedProject:{displayedProject.img}
+            <p>{displayedProject.description}</p>
           </div>
         </div>
       </div>

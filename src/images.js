@@ -5,7 +5,7 @@ import Kookaburra from "./assets/img/Kookaburra.jpeg";
 import PancakeProfile from "./assets/img/PancakeProfile.jpg";
 import PeanutProfile from "./assets/img/PeanutProfile.jpg";
 
-export default [
+const pics = [
   birdo,
   BushTurkey,
   Gweela,
@@ -13,3 +13,5 @@ export default [
   PancakeProfile,
   PeanutProfile,
 ];
+
+export default pics;
