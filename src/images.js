@@ -6,12 +6,12 @@ import PancakeProfile from "./assets/img/PancakeProfile.jpg";
 import PeanutProfile from "./assets/img/PeanutProfile.jpg";
 
 const pics = [
+  PancakeProfile,
+  PeanutProfile,
   birdo,
   BushTurkey,
   Gweela,
   Kookaburra,
-  PancakeProfile,
-  PeanutProfile,
 ];
 
 export default pics;
