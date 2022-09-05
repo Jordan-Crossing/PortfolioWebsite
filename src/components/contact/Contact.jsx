@@ -13,6 +13,7 @@ export default function Contact() {
         initial={{ scale: 1, rotate: 355 }}
         animate={{ rotate: 365, scale: 1 }}
         transition={{
+          delay: 15,
           type: "tween",
           stiffness: 20,
           damping: 10,
