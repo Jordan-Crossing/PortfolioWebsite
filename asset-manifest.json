@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/PortfolioWebsite/static/css/main.9786c007.chunk.css",
-    "main.js": "/PortfolioWebsite/static/js/main.150326db.chunk.js",
-    "main.js.map": "/PortfolioWebsite/static/js/main.150326db.chunk.js.map",
+    "main.js": "/PortfolioWebsite/static/js/main.4d0dd22b.chunk.js",
+    "main.js.map": "/PortfolioWebsite/static/js/main.4d0dd22b.chunk.js.map",
     "runtime-main.js": "/PortfolioWebsite/static/js/runtime-main.cecc7670.js",
     "runtime-main.js.map": "/PortfolioWebsite/static/js/runtime-main.cecc7670.js.map",
     "static/js/2.957cc1bb.chunk.js": "/PortfolioWebsite/static/js/2.957cc1bb.chunk.js",
@@ -17,12 +17,14 @@
     "static/media/PeanutProfile.5574f632.jpg": "/PortfolioWebsite/static/media/PeanutProfile.5574f632.jpg",
     "static/media/birdo.3d55ffdd.jpeg": "/PortfolioWebsite/static/media/birdo.3d55ffdd.jpeg",
     "static/media/layered-waves-haikei.svg": "/PortfolioWebsite/static/media/layered-waves-haikei.80bd2b25.svg",
-    "static/media/rainbow-stacked-waves-haikei.8301b6c1.svg": "/PortfolioWebsite/static/media/rainbow-stacked-waves-haikei.8301b6c1.svg"
+    "static/media/rainbow-stacked-waves-haikei.8301b6c1.svg": "/PortfolioWebsite/static/media/rainbow-stacked-waves-haikei.8301b6c1.svg",
+    "static/media/stacked-steps-haikei.c9329603.svg": "/PortfolioWebsite/static/media/stacked-steps-haikei.c9329603.svg",
+    "static/media/talllayered-steps-haikei.027c84b1.svg": "/PortfolioWebsite/static/media/talllayered-steps-haikei.027c84b1.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.cecc7670.js",
     "static/js/2.957cc1bb.chunk.js",
     "static/css/main.9786c007.chunk.css",
-    "static/js/main.150326db.chunk.js"
+    "static/js/main.4d0dd22b.chunk.js"
   ]
 }
