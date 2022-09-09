@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/PortfolioWebsite/static/css/main.9786c007.chunk.css",
+    "main.js": "/PortfolioWebsite/static/js/main.6dfa534c.chunk.js",
+    "main.js.map": "/PortfolioWebsite/static/js/main.6dfa534c.chunk.js.map",
+    "runtime-main.js": "/PortfolioWebsite/static/js/runtime-main.cecc7670.js",
+    "runtime-main.js.map": "/PortfolioWebsite/static/js/runtime-main.cecc7670.js.map",
+    "static/js/2.957cc1bb.chunk.js": "/PortfolioWebsite/static/js/2.957cc1bb.chunk.js",
+    "static/js/2.957cc1bb.chunk.js.map": "/PortfolioWebsite/static/js/2.957cc1bb.chunk.js.map",
+    "index.html": "/PortfolioWebsite/index.html",
+    "static/css/main.9786c007.chunk.css.map": "/PortfolioWebsite/static/css/main.9786c007.chunk.css.map",
+    "static/js/2.957cc1bb.chunk.js.LICENSE.txt": "/PortfolioWebsite/static/js/2.957cc1bb.chunk.js.LICENSE.txt",
+    "static/media/BushTurkey.33a577c4.jpeg": "/PortfolioWebsite/static/media/BushTurkey.33a577c4.jpeg",
+    "static/media/Gweela.5b9f7687.jpeg": "/PortfolioWebsite/static/media/Gweela.5b9f7687.jpeg",
+    "static/media/Kookaburra.6135e598.jpeg": "/PortfolioWebsite/static/media/Kookaburra.6135e598.jpeg",
+    "static/media/PancakeProfile.6e533900.jpg": "/PortfolioWebsite/static/media/PancakeProfile.6e533900.jpg",
+    "static/media/PeanutProfile.5574f632.jpg": "/PortfolioWebsite/static/media/PeanutProfile.5574f632.jpg",
+    "static/media/birdo.3d55ffdd.jpeg": "/PortfolioWebsite/static/media/birdo.3d55ffdd.jpeg",
+    "static/media/layered-waves-haikei.svg": "/PortfolioWebsite/static/media/layered-waves-haikei.80bd2b25.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cecc7670.js",
+    "static/js/2.957cc1bb.chunk.js",
+    "static/css/main.9786c007.chunk.css",
+    "static/js/main.6dfa534c.chunk.js"
+  ]
+}
