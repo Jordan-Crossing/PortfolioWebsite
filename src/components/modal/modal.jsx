@@ -2,6 +2,7 @@ import Spotlight from "../spotlight/Spotlight";
 import { motion } from "framer-motion";
 import Backdrop from "../backdrop/backdrop";
 import "./modal.scss";
+import tallSteps from "./talllayered-steps-haikei.svg";
 
 console.log("Modal");
 
@@ -38,7 +39,7 @@ const Modal = ({ handleClose, text, project, data }) => {
         initial="hidden"
         animate="visible"
         exit="exit"
-        style={{ backgroundImage: `url(/img/talllayered-steps-haikei.svg)` }}
+        style={{ backgroundImage: `url(${tallSteps})` }}
       >
         <Spotlight
           text={text}

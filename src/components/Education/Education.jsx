@@ -1,12 +1,13 @@
 import "./education.scss";
 // import Scrimba from "./img/Scrimba.png";
+import steps from "./stacked-steps-haikei.svg";
 
 export default function Education() {
   return (
     <div
       className="education"
       id="education"
-      style={{ backgroundImage: `url(/img/stacked-steps-haikei.svg)` }}
+      style={{ backgroundImage: `url(${steps})` }}
     >
       <div className="title">
         <h1>Education</h1>
