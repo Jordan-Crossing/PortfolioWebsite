@@ -40,10 +40,10 @@ export default function Projects() {
       id: "javascriptShowcase",
       title: "JavaScript",
     },
-    {
-      id: "portfolio",
-      title: "Portfolio site",
-    },
+    // {
+    //   id: "portfolio",
+    //   title: "Portfolio site",
+    // },
   ];
 
   useEffect(() => {

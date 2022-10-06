@@ -53,7 +53,7 @@
 
   .item {
     width: clamp(200px, 30vw, 400px);
-    height: clamp(500px, 40vh, 00px);
+    height: clamp(500px, 40vh, 300px);
     border-radius: 20px;
     border: 2px solid rgb(240, 239, 239);
     margin: 10px 20px;
@@ -65,6 +65,7 @@
     transition: all 0.5s ease;
     cursor: pointer;
     box-shadow: 0px 0px 15px -8px black;
+    z-index: 3;
 
     h3 {
       position: absolute;
@@ -75,7 +76,7 @@
       width: 95%;
       height: 95%;
       object-fit: none;
-      z-index: 2;
+      z-index: 3;
     }
 
     &:hover {
@@ -83,7 +84,7 @@
 
       img {
         opacity: 0.2;
-        z-index: 1;
+        z-index: 2;
       }
     }
   }
@@ -96,6 +97,23 @@
   pointer-events: none;
 }
 
+@media screen and (max-width: 600px) {
+  .container {
+    .item {
+      width: clamp(100px, 30vw, 200px);
+      height: clamp(100px, 30vw, 200px);
+    }
+  }
+}
+
+// @media screen and (max-height: 600px) {
+//   .container {
+//     .item {
+//       width: clamp(150px, 30vw, 200px);
+//       height: clamp(150px, 20vh, 200px);
+//     }
+//   }
+// }
 // .backdrop {
 //   position: absolute;
 //   top: 0;

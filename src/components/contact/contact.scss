@@ -35,3 +35,12 @@
     font-weight: 300;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .contact-card {
+    p {
+      display: block;
+      font-size: clamp(1.75vh, 1.5vw, 1.5vw);
+    }
+  }
+}
